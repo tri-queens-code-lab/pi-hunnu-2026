@@ -282,9 +282,9 @@ async function runLoop(
 
 				for (const result of toolResults) {
 					currentContext.messages.push(result);
+					console.error("[P4] 工具结果已加入上下文");
 					newMessages.push(result);
 				}
-				console.error("[P4] 工具结果已加入上下文");
 			}
 
 			lastCompletedTurn = {
